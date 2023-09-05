@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Journal</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="holder headline center">Travel App</div>
+      <form onsubmit="return Client.handleSubmit(event)">
+        <div class="holder zip">
+          <label for="myTripTo">My trip to</label>
+          <input
+            type="text"
+            id="myTripTo"
+            placeholder="enter location (e.g. Paris)"
+          />
+        </div>
+        <div class="holder zip">
+          <label for="departing">Departing</label>
+          <input type="date" id="departing" />
+        </div>
+        <br />
+        <button id="generate" type="submit">Generate</button>
+      </form>
+      <div id="travel-planner-list"></div>
+    </div>
+  </body>
+</html>
